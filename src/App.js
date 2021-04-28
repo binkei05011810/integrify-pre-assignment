@@ -1,4 +1,3 @@
-import './App.css';
 import Users from './Components/Users.js'
 import UserDetail from './Components/UserDetail.js'
 import { Switch, Route, } from "react-router-dom";
