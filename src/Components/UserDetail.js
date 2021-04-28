@@ -57,7 +57,7 @@ function UserDetail(props) {
                     <div>
                         <div className="UserDetail-title w-100 text-center mb-5">
                             <h1>{userDetail.name}</h1>
-                            <h2><i class="fas fa-user-tie"></i> {userDetail.username}</h2>
+                            <h2><i className="fas fa-user-tie"></i> {userDetail.username}</h2>
                         </div>
 
                         <div className="container">

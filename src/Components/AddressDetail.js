@@ -1,7 +1,7 @@
 /* This component is the detail information about a user address, which will pop up 
 when the user click the Address button */
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../Styles/AddressDetail.css';
 import UserInfoPiece from './UserInfoPiece.js';
 import CloseButton from './CloseButton.js';

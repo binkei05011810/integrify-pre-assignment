@@ -1,14 +1,7 @@
 import './App.css';
 import Users from './Components/Users.js'
 import UserDetail from './Components/UserDetail.js'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
+import { Switch, Route, } from "react-router-dom";
 
 function App() {
   return (

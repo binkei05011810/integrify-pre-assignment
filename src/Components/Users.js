@@ -26,8 +26,8 @@ function Users() {
                 <div className="row d-flex justify-content-center">
                     {userData.map(user => {
                         return (
-                            <div className="Users-col col-lg-6 col-md-5 col-sm-7 col-12">
-                                <UserCard key={user.id} userInfo={user} />
+                            <div key={user.id} className="Users-col col-lg-6 col-md-5 col-sm-7 col-12">
+                                <UserCard userInfo={user} />
                             </div>
                         )
                     }

@@ -25,8 +25,8 @@ function UserCard(props) {
                             <h3>{name}</h3>
                         </div>
                         <div className="body-content">
-                            <p className="m-0 mb-2"><i class="fas fa-user mr-2"></i>{username}</p>
-                            <a href={website}><i class="fas fa-heart mr-2"></i>{website}</a>
+                            <p className="m-0 mb-2"><i className="fas fa-user mr-2"></i>{username}</p>
+                            <a href={website}><i className="fas fa-heart mr-2"></i>{website}</a>
                         </div>
                     </div>
                 </div>

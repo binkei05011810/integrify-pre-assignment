@@ -10,7 +10,7 @@ function CloseButton(props) {
         <div
             className="CloseButton"
             onClick={handleClick}>
-            <i class="far fa-times-circle"></i>
+            <i className="far fa-times-circle"></i>
         </div>
     )
 }

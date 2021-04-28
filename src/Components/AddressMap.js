@@ -1,8 +1,8 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import '../Styles/AddressMap.css'
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibWluaGtodWUxODEwMDEiLCJhIjoiY2tvMHg4ajZzMDMxMDJvbHlvaHZrdzM1ZyJ9.GpJbEKOTIHBrmMKx5UGVFA';
+mapboxgl.accessToken = `${process.env.MAPBOX_TOKEN}`;
 
 function AddressMap(props) {
     const mapContainerRef = useRef(null);
