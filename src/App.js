@@ -10,7 +10,7 @@ function App() {
           <Users />
         </Route>
         {/* Routes that go to user detail pages*/}
-        <Route exact path="/:userId">
+        <Route path="/:userId">
           <UserDetail />
         </Route>
       </Switch>

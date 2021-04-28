@@ -24,7 +24,7 @@ function AddressMap(props) {
             .setLngLat([props.longtitude, props.latitude])
             .setPopup(
                 new mapboxgl.Popup({ offset: 25 })
-                    .setHTML(`<p>${props.address}</p>`)
+                    .setHTML(`< p > ${props.address}</p > `)
             )
             .addTo(map)
 
