@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/CardButton.css';
 
+//A button component that belongs to a UserCard
 function CardButton(props) {
     return (
         <div className="CardButton w-100 d-flex justify-content-center">

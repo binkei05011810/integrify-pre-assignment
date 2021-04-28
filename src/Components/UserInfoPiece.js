@@ -1,5 +1,5 @@
-//Component for key-value pair user data. For example {email: nmk@gmail.com}
 
+//Component for key-value pair of user data. For example {email: nmk@gmail.com}
 import React from 'react';
 import '../Styles/UserInfoPiece.css';
 

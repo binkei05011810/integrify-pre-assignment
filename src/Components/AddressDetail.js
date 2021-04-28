@@ -1,5 +1,8 @@
-/* This component is the detail information about a user address, which will pop up 
-when the user click the Address button */
+
+/* 
+This component is the detail information about a user address, which will pop up 
+when the user click the "Address" button.
+*/
 
 import React from 'react';
 import '../Styles/AddressDetail.css';

@@ -7,12 +7,17 @@ import AddressMap from './AddressMap.js';
 import AddressDetail from './AddressDetail.js'
 import ReturnButton from './ReturnButton.js'
 
+/* 
+The component that will render that page display detail information about 
+the user
+
+*/
 function UserDetail(props) {
     let { userId } = useParams();
 
     const [userDetail, setUserInfo] = useState({});
 
-    //False when the data have not been fetched from the API
+    //False when the data have not been fetched from the API.
     const [isLoaded, setLoad] = useState(false)
 
     //The state decide whether the address section is active or not. 
@@ -40,6 +45,7 @@ function UserDetail(props) {
         return `${address.suite} ${address.street}, ${address.zipcode}, ${address.city}`
     }
 
+    /* If the page is loaded then we render the page simultaneously */
     return (
         isLoaded &&
         <div className="Top-level">

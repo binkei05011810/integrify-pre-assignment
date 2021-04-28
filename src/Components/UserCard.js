@@ -1,12 +1,13 @@
-//The user card component that display simple information about a user
-/* The props of UserCard has:
-- name
-- useranme
-- website */
-
 import React from 'react';
 import CardButton from './CardButton';
 import '../Styles/UserCard.css';
+
+//The user card component that display simple information about a user
+/* The props of UserCard has:
+- id
+- name
+- useranme
+- website */
 
 function UserCard(props) {
     let { id, name, username, website } = props.userInfo;

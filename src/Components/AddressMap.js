@@ -2,6 +2,10 @@ import React, { useRef, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import '../Styles/AddressMap.css'
 
+/*
+This the the map component that goes along with each user's address. The location 
+the marker on the map will be the address of the user.
+*/
 mapboxgl.accessToken = "pk.eyJ1IjoibWluaGtodWUxODEwMDEiLCJhIjoiY2tvMWg5cG90MDc0dTJvczJ2MW9xbjN3OSJ9.uRSUmTLFP568PdsQU2vzyQ";
 
 function AddressMap(props) {
@@ -24,7 +28,7 @@ function AddressMap(props) {
             .setLngLat([props.longtitude, props.latitude])
             .setPopup(
                 new mapboxgl.Popup({ offset: 25 })
-                    .setHTML(`< p > ${props.address}</p > `)
+                    .setHTML(`<p>${props.address}</p > `)
             )
             .addTo(map)
 
@@ -32,7 +36,7 @@ function AddressMap(props) {
         return () => map.remove();
     }, []);
 
-    //Hadle user click to the button Address
+    //Hadle user click to the button "Address"
     const handleClick = () => {
         return props.turnOnAddressDetail();
     }
