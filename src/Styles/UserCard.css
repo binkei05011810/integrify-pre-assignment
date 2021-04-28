@@ -1,0 +1,154 @@
+.UserCard-wrapper {
+    background-color: #161a1d;
+    border-radius: 10px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*The line under the card*/
+/*-------------------------------------*/
+.UserCard-wrapper:before {
+    width: 100px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+    transform: translateX(-50%);
+}
+/*-------------------------------------*/
+
+/*Create gradient border for the avatar*/
+/*-------------------------------------*/
+.UserCard-avatar-border {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+}
+
+.UserCard-avatar {
+    border-radius: 50%;
+    background-color: #161a1d;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/*-------------------------------------*/
+
+/*The line under user's name*/
+/*-------------------------------------*/
+.body-title {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.body-title:before {
+    width: 200px;
+    height: 0.5px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(94, 94, 94);
+    transform: translateX(-50%);
+}
+/*-------------------------------------*/
+
+.body-title {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.body-title:before {
+    width: 200px;
+    height: 0.5px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(94, 94, 94);
+    transform: translateX(-50%);
+}
+/*-------------------------------------*/
+
+.UserCard-body {
+    color: white;
+    font-family: 'Amiri', serif;
+}
+
+.UserCard-body h3 {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.body-content {
+    padding-top: 20px;
+}
+
+.body-content a, .body-content a i {
+    color: #f187fb;
+}
+
+.body-content a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+@media (max-width: 575px) {
+    .UserCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .UserCard-wrapper{
+        min-width: 250px;
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+    .UserCard-wrapper {
+        min-height: 370px; 
+    }
+
+    .UserCard-avatar-border {
+        width: 80px;
+        height: 80px;
+        top: -40px;
+        left: calc(50% - 40px);  
+    }
+
+    .UserCard-avatar {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+

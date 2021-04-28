@@ -1,0 +1,39 @@
+.Users {
+    background-color: black;
+    padding-top: 100px;
+}
+
+.Users-title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Yeseva One', cursive;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.Users-title:before {
+    width: 300px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+    transform: translateX(-50%);
+}
+
+.Users-title i {
+    color: hsla(295, 94%, 76%, 1);
+    position: absolute;
+    bottom: -11px;
+    font-size: 25px;
+    left: calc(50% - 15px);
+}
+
+.Users-col {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
