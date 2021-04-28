@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import '../Styles/AddressMap.css'
 
-mapboxgl.accessToken = `${process.env.MAPBOX_TOKEN}`;
+mapboxgl.accessToken = "pk.eyJ1IjoibWluaGtodWUxODEwMDEiLCJhIjoiY2tvMWg5cG90MDc0dTJvczJ2MW9xbjN3OSJ9.uRSUmTLFP568PdsQU2vzyQ";
 
 function AddressMap(props) {
     const mapContainerRef = useRef(null);
@@ -18,7 +18,7 @@ function AddressMap(props) {
         });
 
         // Add navigation control (the +/- zoom buttons)
-        map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+        //map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
         new mapboxgl.Marker()
             .setLngLat([props.longtitude, props.latitude])
